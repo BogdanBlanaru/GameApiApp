@@ -1,13 +1,28 @@
 package com.exercise.GameApp.GameApp.model.dto;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-@Data
-@NoArgsConstructor
-@AllArgsConstructor
 public class GameSummary {
+
     private Long id;
     private String status;
+
+    public GameSummary(Long id, String status) {
+        this.id = id;
+        this.status = status;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
 }
